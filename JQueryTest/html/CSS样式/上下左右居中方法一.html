@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>上下左右居中方法一</title>
+<style>
+*{
+    margin:0px;
+    padding:0px;
+}
+.aa{
+    width:200px;
+    height:200px;
+    background:red;
+    position:absolute;  
+    /*用position:fixed为最佳方案，因为position：fixed定位是相对于整个浏览器页面的。 */
+    left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+</style>
+</head>
+
+<body>
+<div class="aa">123</div>
+</body>
+</html>
